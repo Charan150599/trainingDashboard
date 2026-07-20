@@ -1,0 +1,149 @@
+.training-card {
+  background: #F5F3F7;
+  border-radius: 20px;
+  padding: 32px;
+  width: 100%;
+  max-width: 870px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.training-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.training-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.training-view-all {
+  color: #7c5cfc;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.training-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.training-row {
+  display: grid;
+  grid-template-columns: 70px 220px max-content 70px 100px;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.training-icon-box {
+  width: 70px;
+  height: 70px;
+  background: #f2efff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.icon-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.icon-emoji {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.training-title-block h4 {
+  margin: 0 0 4px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.training-title-block span {
+  font-size: 13px;
+  color: #9a9aa5;
+}
+
+.training-progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;  
+}
+
+.bar-segment {
+  width: 8px;
+  height: 45px;
+  border-radius: 999px;
+  background: #d9d3f7;
+}
+
+
+.bar-segment.filled {
+  background: #7c5cfc;
+}
+
+.training-percent {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+  text-align: right;
+}
+
+.training-students {
+  font-size: 20px;
+  color: #7B7A7C;
+  line-height: 1.4;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .training-row {
+    grid-template-columns: 44px 1fr;
+    grid-template-areas:
+      'icon title'
+      'bar bar'
+      'percent students';
+    row-gap: 8px;
+  }
+
+  .icon-box {
+    grid-area: icon;
+    width: 44px;
+    height: 44px;
+  }
+
+  .title-block {
+    grid-area: title;
+  }
+
+  .progress-bar {
+    grid-area: bar;
+  }
+
+  .percent {
+    grid-area: percent;
+    text-align: left;
+  }
+
+  .students {
+    grid-area: students;
+  }
+}
