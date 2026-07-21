@@ -1,11 +1,12 @@
 import StudentReadinessChart from './components/StudentReadinessChart'
 import TrainingProgressOverview from './components/TrainingProgressOverview'
+import './App.css'
 
 function App() {
   return (
-    <div>
-      <StudentReadinessChart />
+    <div className="dashboard-row">
       <TrainingProgressOverview />
+      <StudentReadinessChart />
     </div>
   )
 }
