@@ -1,10 +1,8 @@
 .training-card {
+  width: 870px;
   background: #F5F3F7;
   border-radius: 20px;
   padding: 32px;
-  width: 100%;
-  max-width: 870px;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 
